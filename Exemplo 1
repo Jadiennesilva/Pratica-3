@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define PI 3.14
+
+float areadocirculo(float raio);
+  int main(){
+	float r, a;
+    
+	
+	printf("informe o valor do raio: ");
+	scanf("%f",&r);
+	
+
+	a = areadocirculo(r);
+	printf("a area do circulo é %.2gf cm\n", a);
+	
+	return 0;
+}
+
+float areadocirculo(float raio){
+	
+	return PI * raio *raio;
+	
+}
