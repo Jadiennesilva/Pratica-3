@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+
+float celsiusparaFahrenheit(float c);
+float Fahrenheitparacelsius(float f);
+
+
+  int main(){
+	int op;
+	float tf, tc;
+	printf("conversor de temperatura\n: ");
+	printf("escolha uma opcao:\n ");
+	printf("celsius para Fahrenheit: ");
+	printf("Fahrenheit para celsius: ");
+	scanf("%d",&op);
+    
+    
+    printf("digite o valor da temperatura: ");
+    
+    if(op == 1){
+    printf("em celcius: ");
+    scanf("%f",&tc);
+    tc = Fahrenheitparacelsius(tc);
+    
+    
+	}else{
+	printf("em fahrenheit: ");
+	scanf("%f",&tf);
+    tc = Fahrenheitparacelsius(tf);
+	}
+	
+	
+	printf("temperatura em celcius: %.2f \n ", tc);
+	printf("temperatura em fahrenheit:%.2f\n ",tf);
+	
+
+}
+
+float celsiusparaFahrenheit(float c){
+	return -c*1.8 +32;
+}
+float Fahrenheitparacelsius(float f){
+	return (f-32)/1.8;
+	
+}
+
